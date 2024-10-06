@@ -1,0 +1,156 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Fullscreen setup */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Container setup */
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+/* Navigation bar styling */
+.nav {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f698fbd3;
+    color: white;
+    position: static;
+    
+}
+
+/* Logo styling */
+.nav-img img {
+    height: 70px;
+    /* width: 50px; */
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+/* Navigation menu styling */
+.nav-menu1 a, .nav-menu2 a {
+    color: rgb(8, 0, 0);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family: 'Jokerman', sans-serif;
+    font-size: larger;
+    
+}
+.nav-menu2 a {
+    margin-right: 15px;
+}
+
+
+.nav-menu1 a:hover, .nav-menu2 a:hover {
+    color: #cc56e3;
+    text-shadow: indigo;
+    -webkit-text-stroke-color: black;
+}
+
+/* Main section styling */
+/* .main {
+    background-image: url(/PRODIGY_WD_01/Resources/1x/elena-mozhvilo-XzvvPUxy6Ho-unsplash.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img img {
+
+    max-width: 100%;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+    
+    
+} */
+.hero {
+    background-image: url('/PRODIGY_WD_01/Resources/1x/elena-mozhvilo-XzvvPUxy6Ho-unsplash.jpg'); /* You can replace with your image */
+    background-size: cover;
+    background-position: center;
+    
+    /* position: static; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+  }
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Jokerman', sans-serif;
+    color: black;
+  }
+  
+  .hero-content p {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family: 'Jokerman', sans-serif;
+    font-weight: bolder;
+    color: black;
+  }
+  .cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f698fbd3;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff9180;
+  }
+
+ /* Footer Styles */
+ footer {
+    background-color: #f698fbd3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
